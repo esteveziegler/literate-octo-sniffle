@@ -1,0 +1,58 @@
+Security 101 Homework: Cybersecurity Threat Landscape
+Part I: Crowdstrike 2021 Global Threat Report
+For Part 1 of your homework assignment, use the Crowdstrike 2021 Global Threat Report along with independent research to answer the following questions.
+
+What was the dominant ransomware family that impacted the healthcare industry in 2020?  Twisted Spider using Maze, closely followed by Wizard Spider using Conti and Ryuk.
+
+
+Describe three different pandemic-related eCrime Phishing themes. 
+Scams offering personal protective equipment.
+Tailored attacks against employees working from home.
+Financial assistance and government stimulus packages.
+
+
+Which industry was targeted with the highest number of ransomware-associated data extortion operations? The healthcare sector
+
+
+What is WICKED PANDA? Where do they originate from? WICKED PANDA are Chinese adversaries that Target telecommunications, government, healthcare and technology using loaders and malware. This Chinese group ran an illicit for profit cyber operation against video game firms for years without punishment, while simultaneously supporting state directed intelligence requirements.
+
+
+Which ransomware actor was the first observed using data extortion in a ransomware campaign? OUTLAW SPIDER first used data extortion with a ransomware operation in May 2019.
+
+
+What is an access broker? An access broker is a threat actor that gains backend access to various organizations (both corporations and government entities) and sells this access either
+on criminal forums or through private channels.
+
+
+Explain a credential-based attack. Credential based attacks occur when attackers steal credentials to gain access, bypass an organizations security measures, and steal critical data. ... Attackers scour social media sites such as LinkedIn, searching for specific users whose credentials will grant access to critical data and information.
+
+
+Who is credited for the heavy adoption of data extortion in ransomware campaigns? Big Game Hunters with Twisted Spider being the most prolific.
+
+
+What is a DLS? It is a dedicated leak site which is a tactic created by attackers to pressure victims into paying as soon as possible. If a victim fails to pay, then attackers
+will often start to leak stolen data successfully obtained during the attack.
+
+
+According to Crowdstrike Falcon OverWatch, what percentage of intrusions came from eCrime intrusions in 2020? 79%
+
+
+
+Who was the most reported criminal adversary of 2020? Wizard Spider
+
+
+Explain how SPRITE SPIDER and CARBON SPIDER impacted virtualization infrastructures. Both actors seek to compromise a DC first before exfiltrating data and deploying ransomware.
+Carbon Spider also introduced its own ransomeware. Both SPRITE SPIDER and CARBON SPIDER succeeded in maximizing impact by allowing other actors to pay them to use their self 
+created ransomware.
+
+
+
+What role does an Enabler play in an eCrime ecosystem? Enablers provide criminal actors with capabilities they might otherwise not have access to. Enablers run malware-as-a-service
+operations, specialize in delivery mechanisms or exploit networks in order to sell initial access to other criminal actors.
+
+
+What are the three parts of the eCrime ecosystem that CrowdStrike highlighted in their report? 1) Services 2) Distribution 3)Monetization
+	
+What is the name of the malicious code used to exploit a vulnerability in the SolarWinds Orion IT management software? Sunburst
+
+
