@@ -1,0 +1,81 @@
+Week 2 Homework:  Assessing Security Culture
+
+Step 1:  Measure and set goals
+Three potential attacks that can be carried out include:  data theft, malware, and insufficient employee training.
+Data theft
+Employees can work to avoid compromised accounts by composing secure passwords that change monthly. Two-factor authentication should be added.
+The company’s IT department should determine what resources each employee has access to and grant them only what they need to do their job.	
+Departing employees have become one of the top data theft threats. The company’s IT department should deactivate user accounts immediately upon termination.
+            Malware
+Employees need to have antimalware software installed on their personal mobile device.
+Have secure mobile communications
+Have strong authentication and use password controls
+Third-party software must be controlled
+Create separate, secured mobile gateways 
+            Insufficient Employee Training
+Monthly training meetings should be set up focusing each month on a different aspect of data security (i.e. passwords, social engineering, email phishing)
+Give frequent reminders sent out in emails or newsletters that include tips for employees
+      3)  Enforce IT security and policy among all staff members by communicating risks, dangers and good practices in clear and comprehensive instructions. Staff training is essential in raising awareness among personnel and motivating them to pay attention to cyberthreats and countermeasures. Staff needs to install updates, ensure that anti-malware protection is always on and manage personal passwords properly and promptly. Newsletters and/or verbal requests doled out monthly could be implemented.
+           Protection should include security solutions that make the corporate network more visible and manageable for IT security teams.
+           Spam, phishing and ransomware can be addressed with endpoint security solutions.  Programs can be implemented that utilize preconfigured protection or advanced security settings.
+      4) The goal would be to have less than 5% of employees involved in data theft or malware situations.  Regarding insufficient employee training–100% of staff should be trained sufficiently utilizing monthly newsletters and direct training per quarter (25%) until the year finishes out at 100%. This should occur annually. Additionally, contingency plans should be in place with guidelines for all employees in an emergency situation. 
+
+Step 2:  Involve the right people
+CISO-Chief Information Security Officer
+This person is responsible for protecting the company’s data.  He or she is in charge of Network Security, Incident Response personnel (IR manager or SOC manager) as well as the Application Security Department. The Application Security Department has a Security Architect that manages security engineers and software engineers
+Chief Information Officer (CIO)
+This individual is responsible for developing IT systems that support the business, provisioning services like VPN, setting up and recycling employee devices and ceasing servers for data storage and internal application development.
+Human resources
+This department is responsible for onboarding employees and for internal communications. Other responsibilities include scheduling training and tracking attendance. 
+The Finance department maintains the businesses financials. This department head (Chief Financial Officer) decides how to wisely allocate company funds. The Security department and Finance department often are at odds as security wants money for more sophisticated monitoring controls whereas finance seeks company profit over perfect security.
+The Security department develops training exercises and collaborates with human resources to determine details of scheduling and delivery
+
+Step 3: Create an Action Plan
+      After getting approval to implement the training, plan to deliver an annual cybersecurity awareness training session that teaches employees about the following:
+– Phishing schemes
+   Educate employees about phishing and cybersecurity best practices from their very first day and continuing education with newsletters, phishing tests and periodic training, a workplace culture of strong cybersecurity will be instilled throughout the company.
+– Passwords
+   Password policies can help foster a culture of personal responsibility. Pass phrases and bans on using personal information and repeat passwords for account logins are recommended. To make passphrases more secure, add punctuation, character substitutions and numbers. Stress to employees to avoid including common personal information in their passwords. Discourage employees from writing down their passwords.
+– Personal Devices should be secured. Employees who conduct business on personal phones need to encrypt their phones. Data can be safeguarded by enabling a stringent passcode on the phone. On Android phones, an encryption feature can be enabled in the security settings. On IPhones, a setting can be enabled that automatically wipes the phone after a certain number of failed access attempts.  
+
+Step 4:  Execute the plan
+After developing the training, implement it. In person meetings will be held quarterly with 25% of staff in attendance so that by the end of the year 100% of all staff will have gone through training. Online training will occur monthly through modules to read and lectures to view, culminating in a test with 80% of correctly answered questions considered to be a passing grade. The test will be given an unlimited number of times until a passing grade has been obtained. The entire module should take no more than thirty minutes.
+Step 5: Measure changes:  After training the entire company, have the pentesters implement the original phishing campaign.  If only 5% of employees fall prey to phishing, then the company has met its goal.  If the percent is higher, then implement the training again or revise the target goal. Either way, annual training for all employees should continue with monthly online continuing education.
+
+Bonus:  other solutions
+
+The company should set thoughtful parameters on which employees may use BYOD and for what purposes. For example: The company should not give non exempt employees access to work emails through their mobile devices unless there is a business need. Additionally, written policies should make it clear that off the clock work is not acceptable and will have consequences. Employers should periodically monitor email traffic to check for unauthorized use after regular business hours and remind employees about the company’s policy. Supervisors need to be reminded of this policy as employees typically respond after hours because of pressure or expectations from supervisors.
+
+This is an administrative control with the goal being deterrent.
+
+An advantage is to decrease the likelihood of falling victim to phishing.
+
+The disadvantage is that with less employees using their personal devices while working remotely, less work will get done. The most secure solution, albeit expensive, would be to provide each employee with a work laptop or work phone so they don’t have to work from a personal device. 
+
+
+Desktop-as a service can be used to transform a personal device such as a laptop or tablet into a work desktop so that employees can access all the applications and files that are on their company’s network. This service is carried out by leasing virtual desktops via a public or private cloud service. 
+
+This is a technical control with the goal being preventive.
+
+An advantage is that with virtual desktops, if an employee’s personal device is stolen, no company data is lost, as data is stored on the virtual desktop instead of the physical desktop. 
+
+The disadvantage is the cost of implementation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
