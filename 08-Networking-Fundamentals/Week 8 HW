@@ -1,0 +1,42 @@
+Phase 1:
+After scanning all of the ip ranges associated with the Hollywood servers, one of the application servers (ip addresses of 167.172.144.11/32) responded to incoming requests.
+
+We used the command fping 167.172.144.11 167.172.144.32 to determine if the addresses were responsive
+full command: "fping 15.199.95.91 15.199.95.28 15.199.94.91 15.199.94.28 11.199.158.91 11.199.158.28 167.172.144.11 167.172.144.32 11.199.141.91 11.199.141.28"
+
+Since Rockstar Corp does not want any of their ip addresses to be open to requests, this is a potential security vulnerability.
+
+Our recommendation would be to not allow ICMP echo requests for both 167.172.144.11 and 167.172.144.32 ip addresses.
+
+This occurred on the network layer because we were dealing with ping, which uses ip addressses which are used on the network layer.
+
+Phase 2:
+IP Address                        Open Ports
+12.205.151.91                     5357
+167.172.144.11/32                 22
+
+After scanning all of the ip addresses associated with Rockstar Corp, we found only four ip addresses that had open ports. Of the four, only two responded to incoming requests, the previously found 167.172.144.11/32.
+
+We used the command "nmap -sS 167.172.144.11 167.172.144.32" to determine if the ports were open, and found both to have port 22 open.
+
+Since Rockstar Corp does not want any of their ip addresses to have open ports that could be directly connected to, this is a potential security vulnerability.
+
+The OSI layer involved was the fourth layer, transport since we were dealing with TCP and making SYN requests to determine the assignment of source and destination ports.
+
+Phase 3:
+After successfully connecting to the Hollywood server with the provided credentials, we were able to find the "hosts" configuration file. In this file we found which ip the rollingstone.com website was redirected to. We then located the real domain of rollingstone.com, which was unknown.yahoo.com.
+
+To find this information we navigated to the "hosts" file with "cd /etc/" and "ls" to display all of the files in the etc directory. Inside the "hosts" file we found that rollingstone.com was set to redirect to 98.137.246.8. To find the real domain of rollingstone.com, we ran "nslookup 98.137.246.8" and were returned with "unknown.yahoo.com".
+
+It is never a good idea to use the same username and password across different accounts. Rockstar Corp should have had a unique username and password instead of using "jimi" and "hendrix" for most of their servers.
+
+This occurred on the application layer because it involved changing DNS paths.
+
+Phase 4:
+We were able to find a note with a link to packets that held the hacker's message. The message stated that the hacker worked at Rockstar Corp. and shared that port 22 was left open for anybody to SSH into, asking for one million dollars in return to provide the username and password. 
+
+In order to find this we used "ls" to show the files where the note was left. Scanning through we saw the hacker's note in a file called "packetcaptureinfo.txt", which held a link to download the packets. We used the application Fireshark to analyze these packets, filtering them by "HTTP" and "ARP" requests. We found a "POST" request that held the HTML Form that contained the hacker's one million dollar deal for the credentials of the Rockstar Corp server. We also found by filtering to "ARP" that there were duplicate IP addresses detected for 192.168.47.200 by MAC addresses (00:0c:29:1d:b3:b1) and (00:0c:29:0f:71:a3), a potential indicator for an ARP poisoning attack.
+
+Since the hacker used an ARP poisoning attack, a potential way to protect against this could be to create a static ARP entry which would manually enter the link between the correct MAC and IP address.
+
+This occurred on the application layer because it involved the transfer of packets containing HTTP requests.
