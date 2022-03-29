@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-29T02:31:22.112Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="lW29A6Roxw2J_sRStzEd" version="17.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-29T02:31:54.016Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.82 Safari/537.36" etag="alka3MQ5KGG3BBSsAqh5" version="17.1.3" type="github">
   <diagram id="Vim2YMB18qbfsKO-1kl4" name="Page-1">
     <mxGraphModel dx="947" dy="804" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -90,10 +90,10 @@
         <mxCell id="Mb7m1HrjGLBDkhzbU_Ss-24" value="" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;" parent="1" vertex="1">
           <mxGeometry x="696" y="204.5" width="328" height="256.5" as="geometry" />
         </mxCell>
-        <mxCell id="Mb7m1HrjGLBDkhzbU_Ss-25" value="Web-1&lt;br&gt;40.122.33.35&lt;br&gt;10.0.0.5&lt;br&gt;Ubuntu 18.04" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;" parent="1" vertex="1">
+        <mxCell id="Mb7m1HrjGLBDkhzbU_Ss-25" value="Web-1&lt;br&gt;40.122.33.35&lt;br&gt;10.0.0.5&lt;br&gt;Docker&lt;br&gt;Ubuntu 18.04" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;" parent="1" vertex="1">
           <mxGeometry x="706" y="257" width="86" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Mb7m1HrjGLBDkhzbU_Ss-27" value="Web-2&lt;br&gt;40.122.33.35&lt;br&gt;10.0.0.6&lt;br&gt;Ubuntu 18.04" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;" parent="1" vertex="1">
+        <mxCell id="Mb7m1HrjGLBDkhzbU_Ss-27" value="Web-2&lt;br&gt;40.122.33.35&lt;br&gt;10.0.0.6&lt;br&gt;Docker&lt;br&gt;Ubuntu 18.04" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;" parent="1" vertex="1">
           <mxGeometry x="814.5" y="259" width="97.5" height="116" as="geometry" />
         </mxCell>
         <mxCell id="Mb7m1HrjGLBDkhzbU_Ss-28" value="Web-3&lt;br&gt;&amp;lt;No exposed IP&amp;gt;&lt;br&gt;10.0.0.7&lt;br&gt;Ubuntu 18.04" style="rounded=0;whiteSpace=wrap;html=1;hachureGap=4;" parent="1" vertex="1">
