@@ -1,0 +1,51 @@
+1. Client/Server based architecture
+2. Request Line, Request Headers, Request Body
+3. Request Body
+4. Headers, Status Line, Body
+5. 400s
+6. GET/POST requests
+7. POST Request
+8. Request Body
+9. Response Body
+10. It gives the user the ability to manage HTTP Requests/Responses an in
+    a repeatable, automated, programmatic way.
+11. -X
+12. -H
+13. -I
+14. Options
+15. Set-Cookie: cart=Bob
+16. 'Connection: keep-alive'
+17. POST
+18. Upgrade-Insecure-Requests: 1
+19. No the request doesn't have a user session associated with it.
+20. The user's login credentials
+21. 200
+22. Apache webserver
+23. Yes, SessionID=5
+24. Detail of the page configuration
+25. Strict-Transport-Security: max-age=31536000; includeSubDomains
+26. Services
+27. APIs
+28. Load Balancer Technology
+29. Docker
+30. .yml (Yaml format)
+31. SELECT {column_name} FROM customers;
+32. INSERT INTO {table_name} (column_1, column_2, column_3) VALUES (value_1, 'value_2', value_3);
+33. It will delete the entire table since there is no SELECT statement.
+
+-- Bonus --
+Step 3: Using Forms and a Cookie Jar
+  - There was a conformation of a login because it showed that multiple cookies being set, 
+    with an incorrect set of credientials there were no cookies set and in the HTML it displayed 
+    an invalid attempt at a login.
+  - Three items (cookies)
+
+Step 4: Log in Using Cookies
+  - Yes it showed in the HTML returned from the curl command that there were elements that
+    contained "dashboard".
+  - Yes
+
+Step 5: Test the Users.php Page
+  - This time we are returned HTML that states "Sorry, you are not allowed to browse users"
+    since we are not an Administrator.
+
