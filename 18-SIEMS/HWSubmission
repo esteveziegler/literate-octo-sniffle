@@ -1,0 +1,20 @@
+
+Step 1: The Need For Speed.
+  The approximate date and time of the attack was February 23rd at 2:30 PM and it took until 
+  11:30 PM, a total of 9 hours.
+  
+  report screenshot: https://i.imgur.com/79JNdy7.png
+
+Step 2: Are We Vulnerable?
+
+  report screenshots: https://i.imgur.com/O2SEJfn.png
+                      https://i.imgur.com/kfSBSRE.png
+                      https://i.imgur.com/b3MUXJ1.png
+                      
+Step 3: Drawing The (Base)line.
+  
+  A baseline of normal activity would be around 12-25 failed log ons per hour.
+  A good threshhold to determine whether an attack was occuring would be 40 log ons per hour.
+  The brute force attack occured between 9AM and 1PM on Friday February 21st, 2020
+  
+  report screenshot: https://i.imgur.com/0lyrpTy.png
