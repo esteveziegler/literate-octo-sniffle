@@ -1,0 +1,155 @@
+Link To Project Slideshow: https://docs.google.com/presentation/d/1BXyw5dQtMxYYY0XOUn5DPJP5gVBxbTxfPfM2qSnd4Ss/edit?usp=sharing
+
+Day 1,2, and 3 Slides: https://imgur.com/a/YeGRcqK
+
+Uploading data to Kibana screenshots:
+https://i.imgur.com/hJ7FpSr.png
+https://i.imgur.com/jDHWkbq.png
+https://i.imgur.com/rsokZkl.png
+https://i.imgur.com/R0F4zCh.png
+
+Kibana Dashboard screenshots:
+https://i.imgur.com/myLldvE.png
+https://i.imgur.com/gRmGArB.png
+https://i.imgur.com/G2nAH9m.png
+https://i.imgur.com/TTHzeTJ.png
+https://i.imgur.com/gKEIFcy.png
+
+Day 2 Questions:
+1. Identify the offensive traffic.
+
+Identify the traffic between your machine and the web machine:
+
+When did the interaction occur?
+
+The interaction occured within the last day, so we limit our timeline on
+Kibana to search the data just within the previous day.
+
+What responses did the victim send back?
+
+The top responses that the victim sent back were: 401, 301, 200, 207, 303
+
+What data is concerning from the Blue Team perspective?
+
+There is a connection spike in the "Connections over time [Packetbeat Flows]
+ECS" graph. Also at the same time there is a spike in the "Errors vs successful
+transactions [Packetbeat] ECS" graph.
+
+
+
+2. Find the request for the hidden directory.
+
+In your attack, you found a secret folder. Let's look at that interaction between these two machines.
+
+How many requests were made to this directory? At what time and from which IP address(es)?
+
+The folder was requested 9,521 times
+
+https://i.imgur.com/myLldvE.png
+
+Which files were requested? What information did they contain?
+
+We can see in the same panel that the file connect_to_corp_server was requested two times.
+
+https://i.imgur.com/nAvSF7U.png
+
+What kind of alarm would you set to detect this behavior in the future?
+
+We could set an alert that goes off for any machine that attempts to access this directory or file.
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+
+This directory and file should be completely taken off the server.
+
+
+
+3. Identify the brute force attack.
+
+After identifying the hidden directory, you used Hydra to brute-force the target server. Answer the following questions:
+
+Can you identify packets specifically from Hydra?
+
+Yes, in the Discovery page, if you search for: "url.path: /company_folders/secret_folder/"
+you will find a few results involving this folder. In these results the "user_agent.original" field
+displayed "Mozilla/4.0(Hydra)".
+
+https://i.imgur.com/zDbHHLC.png
+
+How many requests were made in the brute-force attack?
+
+In the "Top 10 HTTP requests [Packetbeat] ECS" panel, we can see that the password protected "secret_folder" was
+requested 9521 times.
+
+How many requests had the attacker made before discovering the correct password in this one?
+
+Despite the 9521 requests to the directory, the file inside that directory was only requested 2 times. 
+So, the attacker made 9519 requests before discovering the correct password.
+
+What kind of alarm would you set to detect this behavior in the future and at what threshold(s)?
+
+We could set an alert if "401 Unauthorized" responses is returned from any server over a certain threshold
+that would weed out forgotten passwords. You could start out with 10 responses in one hour and
+determine if you need to change it afterwords.
+
+
+We could also create an alert if the "user_agent.original" field includes "Hydra" in the name.
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+
+After your preset amount of "401 Unauthorized" codes have been returned from a server, that server can automatically drop
+traffic from the offending IP address for a period of 1 hour. We could also display a lockout message and lock the
+page from login for atemporary period of time from that user.
+
+
+
+4. Find the WebDav connection.
+
+Use your dashboard to answer the following questions:
+
+How many requests were made to this directory?
+
+There were 120 requests made to the "/webdav/" directory.
+
+https://i.imgur.com/SHzD9nv.png
+
+Which file(s) were requested?
+
+The "shell.php" file was requested 38 times and the "passwd.dav" file was requested 18 times.
+
+https://i.imgur.com/JxC8sR7.png
+https://i.imgur.com/4dpGXvT.png
+
+What kind of alarm would you set to detect such access in the future?
+
+We can create an alert anytime this directory is accessed by a machine other than the machine that should have access.
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+
+Connections to this shared folder should not be accessible from the web interface.
+
+Connections to this shared folder could be restricted by a machine with a firewall rule.
+
+
+
+5. Identify the reverse shell and meterpreter traffic.
+
+To finish off the attack, you uploaded a PHP reverse shell and started a meterpreter shell session. Answer the following questions:
+
+Can you identify traffic from the meterpreter session?
+
+Since port 4444 is the default port used for meterpreter, many attackers forget to change this port before attacking. By searching
+for traffic on port 4444 (source.ip: 192.168.1.105 and destination.port: 4444) we can find the traffic.
+
+https://i.imgur.com/InhBO6t.png
+
+What kinds of alarms would you set to detect this behavior in the future?
+
+We can set an alert for any traffic moving over port 4444.
+
+We can set an alert for any .php file that is uploaded to a server.
+
+Identify at least one way to harden the vulnerable machine that would mitigate this attack.
+
+You could remove the ability to upload files to this directory.
+
+
